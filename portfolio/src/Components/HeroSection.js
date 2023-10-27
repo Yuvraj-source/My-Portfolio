@@ -14,9 +14,19 @@ const heroSectionStyle = {
   fontSize: '16px',
 };
 
+
+const mediaQueryStyle = {
+  // CSS for smaller screens
+  '@media (max-width: 768px)': {
+    padding: '1rem', 
+    fontSize: '14px',
+    backgroundSize: '100% 100%', 
+  },
+};
+
 const HeroSection = () => {
   return (
-    <div style={heroSectionStyle} >
+    <div style={{ ...heroSectionStyle, ...mediaQueryStyle }}>
       <Typography variant="h1" gutterBottom fontFamily={"Helvetica Neue"} >
       Welcome to my world!
       </Typography>

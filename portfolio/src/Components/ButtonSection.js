@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Background2 from "./Assets/Background2.png";
 
 const buttonStyle = {
-  backgroundColor: 'rgb(84, 43, 236)', 
+  backgroundColor: 'rgb(84, 43, 236)',
   color: 'white',
   padding: '12px 24px',
   borderRadius: '100px',
@@ -12,30 +12,45 @@ const buttonStyle = {
   cursor: 'pointer',
   fontSize: '16px',
   fontWeight: 'bold',
-  transition: 'background-color 0.3s, color 0.3s', 
+  transition: 'background-color 0.3s, color 0.3s',
   marginRight: '50px',
   '&:hover': {
-    backgroundColor: 'white', 
-    color: 'black', 
+    backgroundColor: 'white',
+    color: 'black',
   },
 };
 
+const mobileButtonStyle = {
+  marginRight: '0', // Remove right margin on smaller screens
+};
+
 function ButtonSection() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+
   return (
-    <Box py={4} sx={{  background: `url(${Background2})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center',}}>
+    <Box py={4} sx={{
+      background: `url(${Background2})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center center',
+    }}>
       <Grid container spacing={2} justifyContent="center">
         <Grid item>
-          <Button variant="contained" sx={buttonStyle} onClick={() => navigate("/microbiology")}>
+          <Button
+            variant="contained"
+            sx={{ ...buttonStyle, ...mobileButtonStyle }} // Apply the mobileButtonStyle
+            onClick={() => navigate("/microbiology")}
+          >
             Explore Microbiology journey →
           </Button>
         </Grid>
         <Grid item>
-          <Button variant="contained" sx={buttonStyle} onClick={() => navigate("/web-development")}>
-           Explore Front-End Dev journey →
+          <Button
+            variant="contained"
+            sx={{ ...buttonStyle, ...mobileButtonStyle }} // Apply the mobileButtonStyle
+            onClick={() => navigate("/web-development")}
+          >
+            Explore Front-End Dev journey →
           </Button>
         </Grid>
       </Grid>
