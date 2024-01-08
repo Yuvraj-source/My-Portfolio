@@ -95,8 +95,7 @@ function Portfolio() {
             {experiences.map((experience, index) => (
               <Box key={index} bgcolor="background.black" style={cardStyle} borderRadius={4} m={2} p={2}>
               <p>{experience.duration}</p>
-                <p>{experience.duration}</p>
-                <p>{experience.company}</p>
+               <p>{experience.company}</p>
                 <p>{experience.designation}</p>
                
                 <p>{experience.responsibilities}</p>
