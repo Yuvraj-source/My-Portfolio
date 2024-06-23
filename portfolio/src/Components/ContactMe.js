@@ -13,7 +13,7 @@ function ContactMe() {
         </Typography>
         <Grid container spacing={2} justifyContent="center">
           <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Link href="www.linkedin.com/in/yuvraj-salunke-89192411b" sx={{ color: 'white', p: 1 }}>
+            <Link href="https://www.linkedin.com/in/yuvraj-salunke-89192411b/" sx={{ color: 'white', p: 1 }}>
               <LinkedInIcon sx={{ fontSize: 50, color: 'white' }} />
             </Link>
           </Grid>
