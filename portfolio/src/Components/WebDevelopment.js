@@ -17,31 +17,29 @@ const skills = [
 ];
 
 function WebDevelopmentSection() {
-  
   return (
-    <Box py={4} sx={{ background: "black", color: "white", display: "flex", justifyContent: "center"}}>
+    <Box py={4} sx={{ background: "black", color: "white", display: "flex", justifyContent: "center" }}>
       <Paper elevation={3} sx={{ padding: 3, maxWidth: 1000, background: "black" }}>
-        <Typography variant="h3" gutterBottom sx={{ textAlign: "center", color: "white", marginBottom: 2 , fontFamily :"Helvetica Neue"}}>
+        <Typography variant="h3" gutterBottom sx={{ textAlign: "center", color: "white", marginBottom: 2, fontFamily: "Helvetica Neue" }}>
           Why Front-End Development?
         </Typography>
-        <Typography paragraph sx={{ color: "white", textAlign: "center", fontSize:"20px" }}>
+        <Typography paragraph sx={{ color: "white", textAlign: "center", fontSize: "20px" }}>
           I enjoy building visually appealing websites and making user experiences better through coding.
         </Typography>
         <Typography variant="h4" sx={{ textAlign: "center", color: "white", marginBottom: 2 }}>
           Front-End Skills
         </Typography>
-        <Box display="flex" justifyContent="center" mb={4}>
+        <Box display="flex" justifyContent="center" flexWrap="wrap" mb={4}>
           {skills.map((skill, index) => (
-            <div key={index} style={{ textAlign: "center" }}>
+            <div key={index} style={{ textAlign: "center", margin: 10 }}>
               <IconButton
                 aria-label={skill.label}
                 color="primary"
                 sx={{
-                  m: 2,
-                  color: "white", // Set the icon color to white
-                  transition: "transform 0.2s", // Add a transition for the tilt effect
+                  color: "white",
+                  transition: "transform 0.2s",
                   "&:hover": {
-                    transform: "scale(1.2)", // Add tilt effect on hover
+                    transform: "scale(1.2)",
                   },
                 }}
               >
@@ -53,10 +51,10 @@ function WebDevelopmentSection() {
             </div>
           ))}
         </Box>
-        <Typography variant="h" gutterBottom sx={{ textAlign: "center", color: "white", marginBottom: 2 , fontFamily :"Helvetica Neue" }}>
+        <Typography variant="h4" gutterBottom sx={{ textAlign: "center", color: "white", marginBottom: 2, fontFamily: "Helvetica Neue" }}>
           Web Development Projects
         </Typography>
-        <HorizontalScrollList/>
+        <HorizontalScrollList />
       </Paper>
     </Box>
   );
