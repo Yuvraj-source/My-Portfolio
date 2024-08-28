@@ -42,7 +42,7 @@ const HeroSection = () => {
           } 
         }}
       >
-        Welcome to my world!
+        Welcome to My Portfolio!
       </StyledTypography>
       <StyledTypography 
         variant="h3" 
@@ -53,51 +53,40 @@ const HeroSection = () => {
           } 
         }}
       >
-        I'm Yuvraj Salunke, a passionate microbiologist and skilled web developer.
+        I'm Yuvraj Salunke, a microbiologist with extensive experience in pharmaceutical quality control and a passionate web development enthusiast.
       </StyledTypography>
       <StyledTypography 
         variant="h4" 
-        gutterBottom 
+        paragraph 
         sx={{ 
           [theme.breakpoints.down('md')]: { 
             fontSize: '1.25rem' 
           } 
         }}
       >
-        I thrive in two worlds: one where I explore life at the microscopic level as a microbiologist, and the other where I craft stunning websites as a web developer.
+        With over five years in microbiology, I ensure the quality and safety of pharmaceutical products through meticulous testing and compliance. My journey has involved navigating audits and honing my skills in QC Microbiology.
       </StyledTypography>
       <StyledTypography 
         variant="h4" 
-        gutterBottom 
+        paragraph 
         sx={{ 
           [theme.breakpoints.down('md')]: { 
             fontSize: '1.25rem' 
           } 
         }}
       >
-        On this website, you can find more about me and my projects in both fields by clicking on the buttons below:
+        Alongside this, I’ve developed a strong interest in front-end development, crafting websites as a creative outlet to combine my scientific precision with a love for technology.
       </StyledTypography>
       <StyledTypography 
         variant="h4" 
-        gutterBottom 
+        paragraph 
         sx={{ 
           [theme.breakpoints.down('md')]: { 
             fontSize: '1.25rem' 
           } 
         }}
       >
-        Explore Microbiology Career and Front End Development Path.
-      </StyledTypography>
-      <StyledTypography 
-        variant="h3" 
-        gutterBottom 
-        sx={{ 
-          [theme.breakpoints.down('md')]: { 
-            fontSize: '1.5rem' 
-          } 
-        }}
-      >
-        Thank you for visiting my website and I hope you enjoy it.
+        Explore my portfolio to learn more about my work in microbiology or to see my web development projects. Thank you for visiting, and I hope you enjoy exploring my dual interests!
       </StyledTypography>
     </HeroSectionContainer>
   );
