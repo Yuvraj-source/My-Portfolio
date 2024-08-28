@@ -86,7 +86,20 @@ const HeroSection = () => {
           } 
         }}
       >
-        Explore my portfolio to learn more about my work in microbiology or to see my web development projects. Thank you for visiting, and I hope you enjoy exploring my dual interests!
+        Explore my portfolio to learn more about my work in microbiology or to see my web development projects. 
+      </StyledTypography>
+
+      <StyledTypography 
+        variant="h4" 
+        paragraph 
+        sx={{ 
+          fontWeight: 'bold',
+          [theme.breakpoints.down('md')]: { 
+            fontSize: '1.25rem' 
+          } 
+        }}
+      >
+        Thank you for visiting, and I hope you enjoy exploring my dual interests!
       </StyledTypography>
     </HeroSectionContainer>
   );
