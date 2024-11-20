@@ -42,22 +42,22 @@ const HorizontalScrollList = () => {
     {
       title: 'Microverse',
       text: 'Microverse is a dynamic platform designed with Material UI and React.js, hosted on Netlify. Tailored for microbio students and professionals, its your go-to resource for all things micro. Dive into the world of tiny organisms and endless possibilities at Microverse!',
-      github: 'https://github.com/user/project1',
-      website: 'https://user.github.io/project1',
+      github: 'https://github.com/Yuvraj-source/microverse',
+      website: 'https://spiffy-babka-74494a.netlify.app/',
       screenshot: Project1,
     },
     {
       title: 'Foodie',
       text: 'Welcome to Foodie Cloud Kitchen – a culinary showcase! Dive into a world of delectable dishes, meticulously curated with love. Crafted with Material UI and React.js, our platform offers a seamless, elegant experience. Hosted on Netlify, we serve up a feast for your eyes and taste buds, sharing the essence of our exceptional service and flavors. Explore, savor, and enjoy!',
-      github: 'https://github.com/user/project2',
-      website: 'https://user.github.io/project2',
+      github: 'https://github.com/Yuvraj-source/landing-page-cloud-kitchen/tree/master',
+      website: 'https://timely-jelly-5304b3.netlify.app/',
       screenshot: Project2,
     },
     {
       title: 'Agriculture Export',
       text: 'Explore Unity Enterprises at www.unity-enterprises.com, meticulously crafted with HTML, CSS, Bootstrap ,JavaScript  and hosted on Hostinger for an elegant web experience. Discover our agricultural export business, company details, and reach out via our user-friendly contact form.',
-      github: 'https://github.com/user/project3',
-      website: 'https://user.github.io/project3',
+      github: 'https://github.com/Yuvraj-source/unity-project',
+      website: 'https://neon-khapse-3698b3.netlify.app/',
       screenshot: Project3,
     },
   ];

@@ -8,7 +8,13 @@ function Portfolio() {
       company: 'Enzene Bioscience Ltd Chakan , Pune',
       designation : '- Executive',
       responsibilities: [
-        '◉ Perform culture maintenance, sub-culturing, and identification of isolates.',
+        '◉ Isolate, characterize, and identify microorganisms from various sources.',
+        '◉ Maintain in-house microbial isolates and prepare subculturing slants to support routine microbiological requirements.', 
+        '◉ Compile quarterly reports for the in-house isolate’s library, documenting microbial trends and data.',
+        '◉ Manage inventory and reconciliation of bioballs and rehydration fluids, ensuring availability for frequently used microorganisms.',
+        
+
+        
         
       ],
     },
@@ -74,8 +80,7 @@ function Portfolio() {
           </Typography>
           {/* Short Intro */}
           <p>
-            With a robust background spanning 5 years in the pharmaceutical sector, my journey as a microbiologist
-            has been defined by an unwavering commitment to ensuring the quality and safety of pharmaceutical products.
+          With over six years of experience in the pharmaceutical industry, I am dedicated to advancing the quality and safety of pharmaceutical products. As a microbiologist, I specialize in conducting precise, high-level testing to ensure compliance with stringent regulatory standards and contribute to the development of safe, effective healthcare solutions. My work is defined by a commitment to scientific excellence, rigorous analysis, and continuous improvement, all of which play a critical role in safeguarding public health.
           </p>
         </Paper>
       </Grid>

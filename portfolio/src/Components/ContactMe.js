@@ -24,7 +24,7 @@ function ContactMe() {
           </Grid>
           <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Link href="mailto:ydsalunke123@gmail.com" sx={{ color: 'white', p: 1 }}>
-              <EmailIcon sx={{ fontSize: 40, color: 'white' }} />
+              <EmailIcon sx={{ fontSize: 50, color: 'white' }} />
             </Link>
           </Grid>
         </Grid>

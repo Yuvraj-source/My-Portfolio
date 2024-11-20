@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Button, Grid } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import Background2 from "./Assets/Background2.png";
+import Background3 from './Assets/Background3.jpg';
 
 const buttonStyle = {
   backgroundColor: 'rgb(84, 43, 236)',
@@ -29,7 +30,7 @@ function ButtonSection() {
 
   return (
     <Box py={4} sx={{
-      background: `url(${Background2})`,
+      background: `url(${Background3})`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center center',
