@@ -3,6 +3,8 @@ import Typography from '@mui/material/Typography';
 import { styled, useTheme } from '@mui/system';
 import Background2 from './Assets/Background2.png';
 import Background3 from './Assets/Background3.jpg';
+import RotatingCube from './RotatingCube';
+import { Box } from '@mui/material';
 
 const HeroSectionContainer = styled('div')(({ theme }) => ({
   background: `url(${Background3})`,
@@ -10,16 +12,17 @@ const HeroSectionContainer = styled('div')(({ theme }) => ({
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center center',
   color: 'white',
-  padding: '4rem 2rem',
+  padding: '6rem 2rem 4rem', // Add top padding to create space for content
   textAlign: 'center',
-  fontFamily: "'Roboto', sans-serif", // Update font for better readability
+  fontFamily: "'Roboto', sans-serif", 
   fontSize: '20px',
   width: '100%',
   boxSizing: 'border-box',
   margin: 0,
   overflow: 'hidden',
+  position: 'relative',
   [theme.breakpoints.down('md')]: {
-    padding: '2rem',
+    padding: '4rem 2rem', // Adjust padding for medium screens
     fontSize: '16px',
     backgroundSize: '100% 100%',
   },
@@ -35,30 +38,50 @@ const HeroSection = () => {
 
   return (
     <HeroSectionContainer>
+
+<Box
+  sx={{
+    position: 'absolute',
+    top: '2rem', // Space from the top of the section
+    left: '2.5rem', // Space from the left of the screen
+    width: '100px', // Smaller cube size
+    height: '100px', // Match the width for a perfect cube
+    zIndex: 10, // Ensure it appears above other content
+  }}
+>
+  <RotatingCube />
+</Box>
+
+
       <StyledTypography
         variant="h1"
         gutterBottom
         sx={{
           fontSize: '3rem', // Larger font size for h1
           fontWeight: 800, // Bold weight for headings
+          mb: '3rem', 
+
           [theme.breakpoints.down('md')]: {
             fontSize: '2.5rem', // Adjust size on medium screens
+            mb: '1.5rem',
           },
         }}
       >
         Hi, I’m Yuvraj Salunke <br /> Welcome to My Portfolio!
       </StyledTypography>
       <StyledTypography
-        variant="h3"
-        gutterBottom
-        sx={{
-          fontSize: '1.85rem', // Adjusted size for h3
-          fontWeight: 500,
-          [theme.breakpoints.down('md')]: {
-            fontSize: '1.5rem',
-          },
-        }}
-      >
+  variant="h3"
+  gutterBottom
+  sx={{
+    fontSize: '1.85rem', // Adjusted size for h3
+    fontWeight: 500,
+    mt: '2rem', // Added margin-top for spacing
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.5rem',
+      mt: '1.5rem', // Adjust top margin for smaller screens
+    },
+  }}
+>
         Microbiologist with over six years of experience in pharmaceutical quality control
         and a passionate front-end development enthusiast.
       </StyledTypography>
